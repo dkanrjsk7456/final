@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- header.css 파일 연결 -->
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div class="container">
+                <div class="row">
+                    <!-- LOGO -->
+                    <div class="col-md-3">
+                        <div class="header-logo">
+                            <a href="index.html" class="logo">
+                                <img src="./img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /LOGO -->
+
+                    <!-- SEARCH BAR -->
+                    <div class="col-md-6">
+                        <div class="header-search">
+                            <form>
+                                <input class="input" type="text" placeholder="검색어를 입력하세요...">
+                                <button type="submit" class="search-btn">검색</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /SEARCH BAR -->
+
+                    <!-- ACCOUNT -->
+                    <div class="col-md-3 clearfix">
+                        <div class="header-ctn">
+                            <!-- Voice Search -->
+                            <div>
+                                <a href="#" id="voice-search-btn">
+                                    <i class="fa fa-microphone"></i>
+                                    <span>음성</span>
+                                </a>
+                            </div>
+
+                            <!-- Cart -->
+                            <div class="dropdown">
+                                <a href="cart.html">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <span>장바구니</span>
+                                    <div class="qty" id="cart-count">0</div>
+                                </a>
+                            </div>
+
+                            <!-- Menu Toggle -->
+                            <div class="menu-toggle">
+                                <a href="#">
+                                    <i class="fa fa-bars"></i>
+                                    <span>Menu</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /ACCOUNT -->
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

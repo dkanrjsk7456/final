@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>장바구니</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="css/slick.css"/>
+    <link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+    <!-- nouislider -->
+    <link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Custom stylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+    <!-- cart.css 추가 -->
+    <link type="text/css" rel="stylesheet" href="css/cart.css"/>
+
+    <!-- main.js 추가 -->
+    <script src="./js/main.js" defer></script>
+
+    <style>
+        /* 기본 스타일 */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* 전체 화면 높이 */
+        }
+
+        #wrapper {
+            position: relative;
+            min-height: 100vh; /* 화면 전체 높이 */
+        }
+
+        .content {
+            padding-bottom: 150px; /* 푸터와 겹치지 않도록 여백 추가 */
+        }
+
+        footer {
+            position: absolute;
+            bottom: -50px; /* 원하는 위치로 조정 가능 (예: -50px) */
+            width: 100%;
+            height: 150px; /* 푸터 높이 */
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 전체 컨테이너 -->
+    <div id="wrapper">
+        <!-- Header Placeholder -->
+        <header></header>
+
+        <!-- Navigation Placeholder -->
+        <nav></nav>
+
+        <!-- 장바구니 섹션 -->
+        <div id="breadcrumb" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="breadcrumb-header">장바구니</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section content">
+            <div class="container">
+                <div class="row">
+                    <!-- 장바구니 테이블 -->
+                    <div class="col-md-8">
+                        <div class="cart-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>상품</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cart-items">
+                                    <!-- 장바구니 아이템들이 여기에 동적으로 추가됩니다 -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- 장바구니 합계 -->
+                    <div class="col-md-4 cart-summary-container">
+                        <div class="cart-summary">
+                            <h3>장바구니 합계</h3>
+                            <div class="cart-total">
+                                <strong>총 금액:</strong>
+                                <span id="cart-total">₩0</span>
+                            </div>
+                            <a href="checkout.html" class="primary-btn order-submit">결제하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     
+    </div>
+
+    <!-- jQuery Plugins -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/nouislider.min.js"></script>
+    <script src="./js/jquery.zoom.min.js"></script>
+
+    <!-- cart.js 추가 -->
+    <script src="./js/cart.js"></script>
+
+</body>
+</html>
